@@ -1,6 +1,6 @@
 #!/usr/bin/perl 
 use 5.014 ; use warnings ; 
-use Getopt::Std ; getopts '#:d:f:' , \my %o  ; 
+use Getopt::Std ; getopts '#:d:f' , \my %o  ; 
 use FindBin qw[ $Script ] ; 
 use utf8 ; 
 use Scalar::Util qw[ looks_like_number ] ; 
@@ -63,6 +63,7 @@ sub HELP_MESSAGE {
   1234567891 15    # "123456789112345" を出力。 10は1に変換。(20なら2であり、100なら再び1となる。)
   1234567891 -d 4  # "   1   2   3   4   5   6   7   8   9  10" を出力。
   1234567891 ' -12' 12  # "2119876543210123456789112" ; マイナス記号は、オプションと認識されない工夫を要する。
+  1234567891 -f -- -5 5 # "５４３２１０１２３４５" を出力。 -- によってオプションの終了をシェルに認識させている。
 
 オプション :
  -d N   : 未指定だと1と見なす。N桁ずつ並べる。(N桁未満の数は右寄せ) digits 
