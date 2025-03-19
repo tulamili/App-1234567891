@@ -27,7 +27,7 @@
  
  --help  : オンラインマニュアルを表示する。(man や perldoc を使っても良い。)  
 
-## 利用例 
+## コマンド実行例
 
 ![image](https://github.com/user-attachments/assets/3f318bbd-5dc4-4b4a-906c-e27ed465206f)
 
