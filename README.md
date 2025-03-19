@@ -28,8 +28,25 @@
  
  --help  : オンラインマニュアルを表示する。(man や perldoc を使っても良い。)  
 
-## コマンド実行例
+### コマンド実行例
 
 ![image](https://github.com/user-attachments/assets/3f318bbd-5dc4-4b4a-906c-e27ed465206f)
 
 ![image](https://github.com/user-attachments/assets/e650bec9-fc5f-4779-bf85-4b61636e8ee2)
+
+## 有用な例
+
+```
+> alias 123=1234567891
+> 123 80
+12345678911234567892123456789312345678941234567895123456789612345678971234567898
+> echo 'https://github.com/tulamili/App-1234567891/edit/main/README.md'
+https://github.com/tulamili/App-1234567891/edit/main/README.md
+> echo 'https://github.com/tulamili/App-1234567891/edit/main/README.md' | wc 
+      1       1      63
+```
+
+上記で aliasを使ったのは、10文字のコマンドよりも3文字のコマンドにした方が、試行錯誤に便利だからである。
+(unalias 123 でエイリアスは解除が可能である。)
+URLのような、すぐには何文字か正確に分からない場合、wc で確かめる方法もあるが、コマンド文`1234567891 80`
+により、80文字の定規のような文字列を並べて、目で見て比較する方が、上記だと62文字であると、確信しやすい。
