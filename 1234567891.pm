@@ -1,6 +1,6 @@
 package App::1234567891 ;  
-our $VERSION = '0.011' ; 
-our $DATE = '2025-03-18T15:20+09:00' ; 
+our $VERSION = '0.012' ; 
+our $DATE = '2025-03-19T10:15+09:00' ; 
 
 =encoding utf8
 
