@@ -34,6 +34,9 @@
 
 ### コマンド実行例
 
+等幅フォントのターミナルで実行することが望ましい。表示が等幅ではない、つまり不均等な幅で表示されると、
+文字の幅の比較が出来なくて、意味が無いためである。 
+
 ![image](https://github.com/user-attachments/assets/3f318bbd-5dc4-4b4a-906c-e27ed465206f)
 
 ![image](https://github.com/user-attachments/assets/e650bec9-fc5f-4779-bf85-4b61636e8ee2)
